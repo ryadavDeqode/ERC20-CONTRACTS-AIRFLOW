@@ -49,3 +49,25 @@ with DAG(
     python_callable=getDataFirstBatch,
     op_kwargs= {'start' : 1397553, 'end' : 1398554}
   )
+
+# with DAG(
+#   dag_id='batch_2',
+#   start_date=days_ago(1),
+# ) as dag:
+
+#   getDataFirstBatch = PythonOperator(
+#     task_id = 'batch_2',
+#     python_callable=getDataFirstBatch,
+#     op_kwargs= {'start' : 1398554, 'end' : 1399555}
+#   )
+
+# with DAG(
+#   dag_id='batch_3',
+#   start_date=days_ago(1),
+# ) as dag:
+
+#   getDataFirstBatch = PythonOperator(
+#     task_id = 'batch_3',
+#     python_callable=getDataFirstBatch,
+#     op_kwargs= {'start' : 1399555, 'end' : 1400556}
+#   )
